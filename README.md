@@ -1,0 +1,1 @@
+# Training Amharic Text Embedding Models for Passage Retrieval
