@@ -1,11 +1,11 @@
 # Training Amharic Text Embedding Models for Passage Retrieval
 
-This repo contains code for training Amharic Text Embedding models based on 3 Encoder Base models 
-- RoBERTa Base Amharic
-- RoBERTa Medium Amharic
-- BERT Medium Amharic
+This repo contains code for training Amharic Text Embedding models based on 3 Amharic Encoder Base models 
+- [RoBERTa Base Amharic](https://huggingface.co/rasyosef/roberta-base-amharic)
+- [RoBERTa Medium Amharic](https://huggingface.co/rasyosef/roberta-medium-amharic)
+- [BERT Medium Amharic](https://huggingface.co/rasyosef/bert-medium-amharic)
 
-We also Evaluate existing multilingual embedding models form that rank high in the MTEB Leaderboard using the same test set as our embedding models.
+We also Evaluate the highest ranking multilingual embedding models form the [Massive Text Embedding Benchmark (MTEB) Leaderboard](https://huggingface.co/spaces/mteb/leaderboard) using the same test set as our embedding models.
 
 # Results
 Our largest embedding model, RoBERTa-Base-Amharic-Embed beats all of the multilingual embedding models on the MRR@10, NDCG@10 and Recall metrics while having 1/5th of their param count.
@@ -23,3 +23,10 @@ Our largest embedding model, RoBERTa-Base-Amharic-Embed beats all of the multili
 # Code
 
 The training and eval code can be found in the `notebooks` folder.
+
+# Embedding Models
+
+You can download and use our Amharic Text Embedding models from HuggingFace and they are fully compatable with the Sentence Transformers Library
+ - RoBERTa-Base-Amharic-Embed: https://huggingface.co/rasyosef/roberta-amharic-text-embedding-base
+ - RoBERTa-Medium-Amharic-Embed: https://huggingface.co/rasyosef/roberta-amharic-text-embedding-medium
+ - BERT-Medium-Amharic-Embed: https://huggingface.co/rasyosef/bert-amharic-text-embedding-medium
